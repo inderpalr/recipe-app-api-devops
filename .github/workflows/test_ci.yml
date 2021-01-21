@@ -1,0 +1,21 @@
+name: recipe app api (CI-test)
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    steps:
+    
+    - uses: actions/checkout@v2
+      
+    - name: Test and Lint
+      run: |
+        apt-get install python3-dev libffi-dev openssl-dev gcc libc-dev make
+        pip3 install docker-compose
+        docker-compose run --rm app sh -c "python manage.py wait_for_db && python manage.py test && flake8"
