@@ -26,7 +26,7 @@ jobs:
       name: Build & push Docker image
       with:
         image: inderpalr/recipe-app-api-devops
-        tags: v1, latest
+        tags: v1
         registry: registry.hub.docker.com
         dockerfile: Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
