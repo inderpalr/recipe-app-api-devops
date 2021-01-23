@@ -1,16 +1,8 @@
 # Recipe App API DevOps
 
-Source code for my Udemy course Build a [Backend REST API with Python & Django - Advanced](http://udemy.com/django-python-advanced/).
-
-The course teaches how to build a fully functioning REST API using:
-
- - Python
- - Django / Django-REST-Framework
- - Docker / Docker-Compose
- - Test Driven Development
+Source code from Mark @LondonAppDev 
 
 ## Getting started
-
 To start project, run:
 
 ```
