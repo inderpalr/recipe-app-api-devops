@@ -1,5 +1,7 @@
 # Recipe App API DevOps
 
+Backend API to serve Recipe App
+
 Source code from Mark @LondonAppDev 
 
 ## Getting started
